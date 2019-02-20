@@ -30,15 +30,21 @@ With the application, a user will be able to:
 * Flask
 * CSS and HTML
 # SetUp / Installation Requirements
-## Prerequisites python3.6 Good internet connection For windows users: GitBash For linux/ubuntu users : Git
-## Setting up Flask
-## Creating a Virtual Environment.
-## Geting the News API
-* To get our NEWS data through The News Database API, head on to https://newsapi.org/ and sign up for an account.
-* Creating an API key
-* First go to your accounts settings pageAccount settings
-* Then click on the API menu on the leftApi Menu
-* Click on create an API Key to generate a new API keyGenerate api key
+* Prerequisites python3.6 Good internet connection For windows users: GitBash For linux/ubuntu users : Git
+* Setting up Flask
+* Creating a Virtual Environment.
+* Geting the News API
+** To get our NEWS data through The News Database API, head on to https://newsapi.org/ and sign up for an account.
+** Creating an API key
+** First go to your accounts settings pageAccount settings
+** Then click on the API menu on the leftApi Menu
+** Click on create an API Key to generate a new API keyGenerate api key
+* To start using this quiz use the following commands:
+** https://github.com/njoanc/News-API.git
+** https://njoanc.herokuapp.com/
+
+# Running the Application
+To run the application, in your terminal: (virtual)$ python3.6 run.py
 
 # Support and Contact details
 EMAIL: njoanc@gmail.com
