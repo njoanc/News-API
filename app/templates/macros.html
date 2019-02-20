@@ -1,13 +1,18 @@
 {% macro displayNewsList(news_list) %}
 
     {% for news in news_list %}
-    <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 news-card">
-            <!-- <img src="{{ news.urlToImage }}" alt="{{ news.title }} image" class="img-responsive"> -->
-            <li class="text-center">
-                <a href="/news/{{news.id}}">
-                    {{ news.name|truncate(10)}}</a>
-            </li>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="panel" style="border-bottom: 1px solid rgb(215, 231, 156);">
+            <div  class="panel-heading" style="background-color:rgb(50, 131, 238); color: #fff; font-size: 18px;">
+               {{news.title}} 
+            </div>
+            <div class="panel-body" style="font-size: 16px;">
+                <p>{{ news.name|truncate(10)}}</p>
+                <a href="/news/{{news.id}}" class="btn" style="color: #fff; background-color:rgb(39, 228, 86);">See more from this site</a>
+            </div>               
+        </div>
     </div>
-
     {% endfor %}
 {% endmacro %}
+
+

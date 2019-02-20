@@ -50,12 +50,12 @@ def news(title):
 @app.route('/search/<news_author>')
 def search(news_author):
     '''
-    View function to display the search news
+    View function to display the search articles
     '''
     news_author_list = news_author.split(" ")
     news_author_format = "+".join(news_author_list)
     searched_news = search_news(news_author_format)
-    title = f'search news for {news_author}'
+    title = f'search articles for {news_author}'
     return render_template('search.html',news = searched_news)
 
 @app.route('/news/review/new/<author>', methods = ['GET','POST'])
